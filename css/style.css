@@ -152,6 +152,8 @@ header {
 	-ms-align-items: center;
 	align-items: center;
 	margin-bottom: 150px;
+	max-width: 90%;
+	margin: 0 auto 150px;
 }
 
 .heading h2 {
@@ -337,7 +339,25 @@ header {
 	height: 10px;
 }
 
+.section-bg {
+	height: 700px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	background: url(../img/qupte-bg.png) no-repeat center top;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
 /* quote */
+
+.quote {
+	color: #fff;
+}
 
 .box-quote {
 	padding: 250px 0;
@@ -393,4 +413,69 @@ header {
 	height: 4px;
 	margin: 0 auto 20px;
 	background-color: #f39c12;
+}
+
+/* team */
+
+.box-team {
+	padding: 105px 0  100px;
+}
+
+.team-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.team-list_item {
+	width: 269px;
+	padding: 26px 15px 30px;
+}
+
+.team-list_item:hover {
+	background-color: #f0f0f0;
+	border-top: 4px solid #39c12;
+}
+
+.team-list_img {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 62px;
+	background-color: #e8f8f4;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 6px solid #f2f2f2;
+	position: relative;
+}
+
+.team-list_img:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 202px;
+	height: 202px;
+	border-radius: 50%;
+	border: 1px solid #e6e6e6;
+}
+
+.team-list_img img{
+	height: 100%;
+	width: 100%;
+	display: block;
+	border-right: 50%;
 }
