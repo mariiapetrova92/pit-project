@@ -438,11 +438,17 @@ header {
 .team-list_item {
 	width: 269px;
 	padding: 26px 15px 30px;
+	text-align: center;
+	border-top: 4px solid transparent;
 }
 
 .team-list_item:hover {
 	background-color: #f0f0f0;
-	border-top: 4px solid #39c12;
+	border-color: #F39c12;
+}
+
+.team-list_item:hover .team-list_job:after {
+	background-color: #e74c3c;
 }
 
 .team-list_img {
@@ -461,6 +467,7 @@ header {
 	border-radius: 50%;
 	border: 6px solid #f2f2f2;
 	position: relative;
+	margin: 0 auto 25px;
 }
 
 .team-list_img:after {
@@ -478,4 +485,43 @@ header {
 	width: 100%;
 	display: block;
 	border-right: 50%;
+}
+
+.team-list_job {
+	color: #999999;
+	font-family: "Lato",sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.team-list_job:after {
+	content: '';
+	display: block;
+	margin: 10px auto 15px;
+	width: 20px;
+	height: 4px;
+	background-color: #cccccc;
+}
+
+.team-list_item p {
+	line-height: 28px;
+	color: #737373;
+	font-size: 16px;
+	margin-bottom: 25px;
+}
+
+.social_link {
+	font-size: 18px;
+	color: 999px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 12px;
+}
+
+.social_link:last-child {
+	margin-right: 0;
+}
+
+.social_link:hover {
+	color: #f39c12;
 }
