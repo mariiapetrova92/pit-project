@@ -1327,3 +1327,29 @@ header {
 	align-items: center;
 	justify-content: center;
 }
+
+.footer-flex {
+	display: flex;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	align-items: center;
+}
+.footer-flex .social {
+	margin-left: auto;
+}
+
+.footer-flex .social_link {
+	color: #0d0d0d;
+}
+
+.footer-flex .social_link:hover {
+	color: #f39c12;
+}
+
+.copyright {
+	color: #0d0d0d;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
